@@ -20,3 +20,8 @@ with col1:
 with col2:
     for i in range(2,4):
         st.button(voc["Hanzi"].values[indices[i]], on_click= is_correct, args=(indices[i],j))
+
+st.markdown(""" div.stButton > button:first-child {
+background-color: #00cc00;color:white;font-size:20px;height:3em;width:30em;border-radius:10px 10px 10px 10px;
+}
+""", unsafe_allow_html=True)
