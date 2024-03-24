@@ -3,10 +3,9 @@ import pandas as pd
 import numpy as np
 voc = pd.read_csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vSeARXO3MT92XWpg2IwyQOQ8Wi2upeEkqJvNJz5i3bRqHdJIrTchGBBclVu-3Jd1ohYKM4IxecgV64I/pub?output=csv')
 l = voc.shape[0]
-word_fr = voc['Définition'].values[i]
-st.write("Traduis : "+word_fr)
 indices = np.random.choice(l, size=4, replace=False)
 j = np.random.choice(indices)
+word_fr=voc['Définition'].values[j]
 
 def is_correct(i, j):
   if i==j:
