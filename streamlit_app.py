@@ -26,14 +26,14 @@ st.write('''<style>
   button[kind="primary"] {
       background-color: white;
       color: black;
-      border-color: grey;
+      border-color: blue;
   }
   </style>''', unsafe_allow_html=True)
 st.write('''<style>
   button[kind="secondary"] {
       background-color: white;
       color: black;
-      border-color: grey;
+      border-color: blue;
   }
   </style>''', unsafe_allow_html=True)
 st.button("Seconday button")  # st.button default type is secondary
