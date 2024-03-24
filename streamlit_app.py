@@ -7,6 +7,7 @@ indices = np.random.choice(l, size=4, replace=False)
 j = np.random.choice(indices)
 word_fr=voc['Définition'].values[j]
 st.write('Traduis: '+word_fr)
+
 def is_correct(i, j):
   if i==j:
     st.write("Bien joué !")
