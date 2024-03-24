@@ -22,19 +22,5 @@ with col2:
         st.button(voc["Hanzi"].values[indices[i]], on_click= is_correct, args=(indices[i],j))
 
 
-st.write('''<style>
-  button[kind="primary"] {
-      background-color: white;
-      color: black;
-      border-color: blue;
-  }
-  </style>''', unsafe_allow_html=True)
-st.write('''<style>
-  button[kind="secondary"] {
-      background-color: white;
-      color: black;
-      border-color: blue;
-  }
-  </style>''', unsafe_allow_html=True)
 st.button("Seconday button")  # st.button default type is secondary
 st.button("Primary button", type="primary")
