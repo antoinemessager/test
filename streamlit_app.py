@@ -1,6 +1,8 @@
 import streamlit as st 
 import pandas as pd
 import numpy as np
+st.write('Hello')
+
 voc = pd.read_csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vSeARXO3MT92XWpg2IwyQOQ8Wi2upeEkqJvNJz5i3bRqHdJIrTchGBBclVu-3Jd1ohYKM4IxecgV64I/pub?output=csv')
 l = voc.shape[0]
 indices = np.random.choice(l, size=4, replace=False)
